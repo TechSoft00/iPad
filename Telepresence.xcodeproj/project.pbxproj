@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B3668002D6723D600FDF0FC /* VideoRotationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3667FF2D6723D600FDF0FC /* VideoRotationSettingsView.swift */; };
+		8B3668162D6B18C500FDF0FC /* FaceDetectionVideoSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3668152D6B18C500FDF0FC /* FaceDetectionVideoSettingView.swift */; };
+		8B78C8D22D53CB8300C73B5E /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C8D12D53CB8300C73B5E /* SettingViewModel.swift */; };
+		8B78C8D62D549B3E00C73B5E /* Videos+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C8D42D549B3E00C73B5E /* Videos+CoreDataClass.swift */; };
+		8B78C8D72D549B3E00C73B5E /* Videos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C8D52D549B3E00C73B5E /* Videos+CoreDataProperties.swift */; };
+		8B78C8DB2D549BFB00C73B5E /* VideoRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C8DA2D549BFB00C73B5E /* VideoRepositoryProtocol.swift */; };
+		8B78C8DD2D549C2A00C73B5E /* VideoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C8DC2D549C2A00C73B5E /* VideoRepository.swift */; };
+		8B78C8F32D54B6D500C73B5E /* ExternalScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C8F22D54B6D500C73B5E /* ExternalScreenManager.swift */; };
+		8B78C94E2D5642C000C73B5E /* FaceDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C94D2D5642C000C73B5E /* FaceDetector.swift */; };
+		8B78C9A52D58E38B00C73B5E /* ExternalDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C9A42D58E38B00C73B5E /* ExternalDisplayManager.swift */; };
+		8B78C9A92D58EACD00C73B5E /* initial.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8B78C9A82D58EACD00C73B5E /* initial.mp4 */; };
+		8B78C9AB2D58EB8700C73B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B78C9AA2D58EB8700C73B5E /* AppDelegate.swift */; };
+		8BA8FC432D5F4C9F002E26EA /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FC422D5F4C9F002E26EA /* PromptView.swift */; };
+		8BA8FC662D6104EA002E26EA /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FC652D6104EA002E26EA /* CameraPreviewView.swift */; };
+		8BA8FCF32D639E3D002E26EA /* InitialVideoSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA8FCF22D639E3D002E26EA /* InitialVideoSettingView.swift */; };
+		8BB9F57A2D5D102800BDBB5C /* SettingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9F5792D5D102800BDBB5C /* SettingItemView.swift */; };
+		8BD768222D503C3C00ADFCEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD768192D503C3C00ADFCEE /* Preview Assets.xcassets */; };
+		8BD768232D503C3C00ADFCEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BD7681B2D503C3C00ADFCEE /* Assets.xcassets */; };
+		8BD768262D503C3C00ADFCEE /* Telepresence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7681E2D503C3C00ADFCEE /* Telepresence.xcdatamodeld */; };
+		8BD768272D503C3C00ADFCEE /* TelepresenceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7681F2D503C3C00ADFCEE /* TelepresenceApp.swift */; };
+		8BD7682F2D503E5300ADFCEE /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7682E2D503E5300ADFCEE /* SpeechRecognizer.swift */; };
+		8BD768322D5042DA00ADFCEE /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD768312D5042DA00ADFCEE /* SpeechRecognitionView.swift */; };
+		8BD768352D50472900ADFCEE /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD768342D50472900ADFCEE /* CoreDataManager.swift */; };
+		8BD7684C2D504F7900ADFCEE /* PJRPulseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD7684B2D504F7900ADFCEE /* PJRPulseButton.swift */; };
+		8BD768662D51573600ADFCEE /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD768652D51573600ADFCEE /* SettingView.swift */; };
+		8BD768682D52863400ADFCEE /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD768672D52863400ADFCEE /* TagView.swift */; };
+		8BD7686A2D5287B200ADFCEE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BD768692D5287B200ADFCEE /* Launch Screen.storyboard */; };
+		8BFDAE432D6E0A520075D075 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDAE422D6E0A520075D075 /* CameraViewModel.swift */; };
+		8BFDAE442D6E0A520075D075 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDAE412D6E0A520075D075 /* MotionManager.swift */; };
+		8BFDAE482D6E0A890075D075 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDAE472D6E0A890075D075 /* CameraView.swift */; };
+		8BFDAE4A2D6E0AC90075D075 /* VideoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDAE492D6E0AC90075D075 /* VideoWriter.swift */; };
+		8BFDAE4C2D6E0AD70075D075 /* BackgroundRemover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDAE4B2D6E0AD70075D075 /* BackgroundRemover.swift */; };
+		8BFDAE972D6F80D50075D075 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8BFDAE962D6F80D50075D075 /* DeepLabV3.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8B3667FF2D6723D600FDF0FC /* VideoRotationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRotationSettingsView.swift; sourceTree = "<group>"; };
+		8B3668152D6B18C500FDF0FC /* FaceDetectionVideoSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionVideoSettingView.swift; sourceTree = "<group>"; };
+		8B78C8D12D53CB8300C73B5E /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		8B78C8D42D549B3E00C73B5E /* Videos+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8B78C8D52D549B3E00C73B5E /* Videos+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Videos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8B78C8DA2D549BFB00C73B5E /* VideoRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRepositoryProtocol.swift; sourceTree = "<group>"; };
+		8B78C8DC2D549C2A00C73B5E /* VideoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRepository.swift; sourceTree = "<group>"; };
+		8B78C8F22D54B6D500C73B5E /* ExternalScreenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalScreenManager.swift; sourceTree = "<group>"; };
+		8B78C94D2D5642C000C73B5E /* FaceDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetector.swift; sourceTree = "<group>"; };
+		8B78C9A42D58E38B00C73B5E /* ExternalDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDisplayManager.swift; sourceTree = "<group>"; };
+		8B78C9A82D58EACD00C73B5E /* initial.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = initial.mp4; sourceTree = "<group>"; };
+		8B78C9AA2D58EB8700C73B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BA8FC422D5F4C9F002E26EA /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		8BA8FC652D6104EA002E26EA /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
+		8BA8FCF22D639E3D002E26EA /* InitialVideoSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialVideoSettingView.swift; sourceTree = "<group>"; };
+		8BB9F5792D5D102800BDBB5C /* SettingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemView.swift; sourceTree = "<group>"; };
+		8BD768032D503BDD00ADFCEE /* Telepresence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Telepresence.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD768192D503C3C00ADFCEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BD7681B2D503C3C00ADFCEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BD7681F2D503C3C00ADFCEE /* TelepresenceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelepresenceApp.swift; sourceTree = "<group>"; };
+		8BD768212D503C3C00ADFCEE /* Telepresence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Telepresence.xcdatamodel; sourceTree = "<group>"; };
+		8BD7682B2D503DBD00ADFCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8BD7682E2D503E5300ADFCEE /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		8BD768312D5042DA00ADFCEE /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
+		8BD768342D50472900ADFCEE /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8BD7684B2D504F7900ADFCEE /* PJRPulseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJRPulseButton.swift; sourceTree = "<group>"; };
+		8BD768652D51573600ADFCEE /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		8BD768672D52863400ADFCEE /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		8BD768692D5287B200ADFCEE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		8BFDAE412D6E0A520075D075 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		8BFDAE422D6E0A520075D075 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		8BFDAE472D6E0A890075D075 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8BFDAE492D6E0AC90075D075 /* VideoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWriter.swift; sourceTree = "<group>"; };
+		8BFDAE4B2D6E0AD70075D075 /* BackgroundRemover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRemover.swift; sourceTree = "<group>"; };
+		8BFDAE962D6F80D50075D075 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BD768002D503BDD00ADFCEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B78C8D02D53CB6800C73B5E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C8D12D53CB8300C73B5E /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8B78C8D32D53DEFD00C73B5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C8D42D549B3E00C73B5E /* Videos+CoreDataClass.swift */,
+				8B78C8D52D549B3E00C73B5E /* Videos+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8B78C8D82D549B8900C73B5E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C8DC2D549C2A00C73B5E /* VideoRepository.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8B78C8D92D549B9900C73B5E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C8DA2D549BFB00C73B5E /* VideoRepositoryProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8BB9F5782D5D102200BDBB5C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8BB9F5792D5D102800BDBB5C /* SettingItemView.swift */,
+				8BA8FCF22D639E3D002E26EA /* InitialVideoSettingView.swift */,
+				8B3667FF2D6723D600FDF0FC /* VideoRotationSettingsView.swift */,
+				8B3668152D6B18C500FDF0FC /* FaceDetectionVideoSettingView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8BD767FA2D503BDD00ADFCEE = {
+			isa = PBXGroup;
+			children = (
+				8BD768202D503C3C00ADFCEE /* Telepresence */,
+				8BD768042D503BDD00ADFCEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8BD768042D503BDD00ADFCEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BD768032D503BDD00ADFCEE /* Telepresence.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BD7681A2D503C3C00ADFCEE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8BD768192D503C3C00ADFCEE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BD768202D503C3C00ADFCEE /* Telepresence */ = {
+			isa = PBXGroup;
+			children = (
+				8BD7682B2D503DBD00ADFCEE /* Info.plist */,
+				8BD768292D503C8800ADFCEE /* CoreData */,
+				8BD768282D503C7900ADFCEE /* Modules */,
+				8BD768332D5045B500ADFCEE /* Assets */,
+				8BD7681A2D503C3C00ADFCEE /* Preview Content */,
+			);
+			path = Telepresence;
+			sourceTree = "<group>";
+		};
+		8BD768282D503C7900ADFCEE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8BFDAE3E2D6E0A360075D075 /* CameraView */,
+				8BD768632D51571700ADFCEE /* Setting */,
+				8BD7682C2D503E3500ADFCEE /* SpeechRecognizer */,
+				8BD7682A2D503C9800ADFCEE /* App */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8BD768292D503C8800ADFCEE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C8D92D549B9900C73B5E /* Protocols */,
+				8B78C8D82D549B8900C73B5E /* Services */,
+				8B78C8D32D53DEFD00C73B5E /* Models */,
+				8BD7681E2D503C3C00ADFCEE /* Telepresence.xcdatamodeld */,
+				8BD768342D50472900ADFCEE /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8BD7682A2D503C9800ADFCEE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C9AA2D58EB8700C73B5E /* AppDelegate.swift */,
+				8BD7681F2D503C3C00ADFCEE /* TelepresenceApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8BD7682C2D503E3500ADFCEE /* SpeechRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				8BD7682D2D503E4600ADFCEE /* ViewModel */,
+				8BD768302D5042CE00ADFCEE /* Views */,
+			);
+			path = SpeechRecognizer;
+			sourceTree = "<group>";
+		};
+		8BD7682D2D503E4600ADFCEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C9A42D58E38B00C73B5E /* ExternalDisplayManager.swift */,
+				8B78C94D2D5642C000C73B5E /* FaceDetector.swift */,
+				8BD7682E2D503E5300ADFCEE /* SpeechRecognizer.swift */,
+				8B78C8F22D54B6D500C73B5E /* ExternalScreenManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8BD768302D5042CE00ADFCEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BD7684A2D504F6D00ADFCEE /* SubViews */,
+				8BD768312D5042DA00ADFCEE /* SpeechRecognitionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BD768332D5045B500ADFCEE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C9A82D58EACD00C73B5E /* initial.mp4 */,
+				8BD7681B2D503C3C00ADFCEE /* Assets.xcassets */,
+				8BD768692D5287B200ADFCEE /* Launch Screen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8BD7684A2D504F6D00ADFCEE /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8BA8FC652D6104EA002E26EA /* CameraPreviewView.swift */,
+				8BA8FC422D5F4C9F002E26EA /* PromptView.swift */,
+				8BD768672D52863400ADFCEE /* TagView.swift */,
+				8BD7684B2D504F7900ADFCEE /* PJRPulseButton.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8BD768632D51571700ADFCEE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8B78C8D02D53CB6800C73B5E /* ViewModel */,
+				8BD768642D51572500ADFCEE /* Views */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8BD768642D51572500ADFCEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BB9F5782D5D102200BDBB5C /* SubViews */,
+				8BD768652D51573600ADFCEE /* SettingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BFDAE3E2D6E0A360075D075 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				8BFDAE402D6E0A440075D075 /* ViewModel */,
+				8BFDAE3F2D6E0A400075D075 /* Views */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
+		8BFDAE3F2D6E0A400075D075 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BFDAE472D6E0A890075D075 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BFDAE402D6E0A440075D075 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8BFDAE962D6F80D50075D075 /* DeepLabV3.mlmodel */,
+				8BFDAE4B2D6E0AD70075D075 /* BackgroundRemover.swift */,
+				8BFDAE492D6E0AC90075D075 /* VideoWriter.swift */,
+				8BFDAE412D6E0A520075D075 /* MotionManager.swift */,
+				8BFDAE422D6E0A520075D075 /* CameraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BD768022D503BDD00ADFCEE /* Telepresence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BD768162D503BDE00ADFCEE /* Build configuration list for PBXNativeTarget "Telepresence" */;
+			buildPhases = (
+				8BD767FF2D503BDD00ADFCEE /* Sources */,
+				8BD768002D503BDD00ADFCEE /* Frameworks */,
+				8BD768012D503BDD00ADFCEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Telepresence;
+			packageProductDependencies = (
+			);
+			productName = Telepresence;
+			productReference = 8BD768032D503BDD00ADFCEE /* Telepresence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BD767FB2D503BDD00ADFCEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					8BD768022D503BDD00ADFCEE = {
+						CreatedOnToolsVersion = 16.1;
+					};
+				};
+			};
+			buildConfigurationList = 8BD767FE2D503BDD00ADFCEE /* Build configuration list for PBXProject "Telepresence" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BD767FA2D503BDD00ADFCEE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8BD768042D503BDD00ADFCEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BD768022D503BDD00ADFCEE /* Telepresence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BD768012D503BDD00ADFCEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B78C9A92D58EACD00C73B5E /* initial.mp4 in Resources */,
+				8BD7686A2D5287B200ADFCEE /* Launch Screen.storyboard in Resources */,
+				8BD768222D503C3C00ADFCEE /* Preview Assets.xcassets in Resources */,
+				8BD768232D503C3C00ADFCEE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BD767FF2D503BDD00ADFCEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B78C8F32D54B6D500C73B5E /* ExternalScreenManager.swift in Sources */,
+				8B78C8DD2D549C2A00C73B5E /* VideoRepository.swift in Sources */,
+				8B78C9A52D58E38B00C73B5E /* ExternalDisplayManager.swift in Sources */,
+				8BFDAE972D6F80D50075D075 /* DeepLabV3.mlmodel in Sources */,
+				8BD768352D50472900ADFCEE /* CoreDataManager.swift in Sources */,
+				8BFDAE4A2D6E0AC90075D075 /* VideoWriter.swift in Sources */,
+				8BD768322D5042DA00ADFCEE /* SpeechRecognitionView.swift in Sources */,
+				8B78C8D62D549B3E00C73B5E /* Videos+CoreDataClass.swift in Sources */,
+				8B78C8D72D549B3E00C73B5E /* Videos+CoreDataProperties.swift in Sources */,
+				8BD7682F2D503E5300ADFCEE /* SpeechRecognizer.swift in Sources */,
+				8B78C8DB2D549BFB00C73B5E /* VideoRepositoryProtocol.swift in Sources */,
+				8BD768662D51573600ADFCEE /* SettingView.swift in Sources */,
+				8BA8FC432D5F4C9F002E26EA /* PromptView.swift in Sources */,
+				8BB9F57A2D5D102800BDBB5C /* SettingItemView.swift in Sources */,
+				8BA8FCF32D639E3D002E26EA /* InitialVideoSettingView.swift in Sources */,
+				8BD768262D503C3C00ADFCEE /* Telepresence.xcdatamodeld in Sources */,
+				8B78C94E2D5642C000C73B5E /* FaceDetector.swift in Sources */,
+				8BD7684C2D504F7900ADFCEE /* PJRPulseButton.swift in Sources */,
+				8BD768272D503C3C00ADFCEE /* TelepresenceApp.swift in Sources */,
+				8B3668162D6B18C500FDF0FC /* FaceDetectionVideoSettingView.swift in Sources */,
+				8B3668002D6723D600FDF0FC /* VideoRotationSettingsView.swift in Sources */,
+				8BA8FC662D6104EA002E26EA /* CameraPreviewView.swift in Sources */,
+				8BFDAE482D6E0A890075D075 /* CameraView.swift in Sources */,
+				8BFDAE432D6E0A520075D075 /* CameraViewModel.swift in Sources */,
+				8BFDAE442D6E0A520075D075 /* MotionManager.swift in Sources */,
+				8BFDAE4C2D6E0AD70075D075 /* BackgroundRemover.swift in Sources */,
+				8B78C8D22D53CB8300C73B5E /* SettingViewModel.swift in Sources */,
+				8B78C9AB2D58EB8700C73B5E /* AppDelegate.swift in Sources */,
+				8BD768682D52863400ADFCEE /* TagView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BD768142D503BDE00ADFCEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BD768152D503BDE00ADFCEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BD768172D503BDE00ADFCEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Telepresence/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QR3W97429;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Telepresence/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Telepresence;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Telepresence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		8BD768182D503BDE00ADFCEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Telepresence/Preview Content\"";
+				DEVELOPMENT_TEAM = 6QR3W97429;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Telepresence/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Telepresence;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to the microphone";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "We need access to speech recognition";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Telepresence;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BD767FE2D503BDD00ADFCEE /* Build configuration list for PBXProject "Telepresence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD768142D503BDE00ADFCEE /* Debug */,
+				8BD768152D503BDE00ADFCEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BD768162D503BDE00ADFCEE /* Build configuration list for PBXNativeTarget "Telepresence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BD768172D503BDE00ADFCEE /* Debug */,
+				8BD768182D503BDE00ADFCEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8BD7681E2D503C3C00ADFCEE /* Telepresence.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8BD768212D503C3C00ADFCEE /* Telepresence.xcdatamodel */,
+			);
+			currentVersion = 8BD768212D503C3C00ADFCEE /* Telepresence.xcdatamodel */;
+			path = Telepresence.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8BD767FB2D503BDD00ADFCEE /* Project object */;
+}
